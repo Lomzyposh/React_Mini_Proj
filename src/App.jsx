@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <RouterConfig />
     </BrowserRouter>
+    
   )
 }
 
