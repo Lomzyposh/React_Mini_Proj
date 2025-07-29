@@ -15,7 +15,7 @@ nav .logo {
 
 nav .logo h1 {
   color: #61dafb;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'DynaPuff', sans-serif;
 }
 
@@ -23,4 +23,106 @@ nav .logo img {
   width: 50px;
   height: 50px;
   border-radius: 50px;
+}
+
+.customLoad {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.book-loader {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4px;
+  animation: stack 2s infinite alternate;
+}
+
+.book {
+  width: 50px;
+  height: 20px;
+  background-color: #1e3148;
+  border-radius: 12px;
+  transform-origin: bottom;
+  animation: bookDrop 0.8s ease-in-out infinite alternate;
+}
+
+.book:nth-child(2) {
+  animation-delay: 0.2s;
+  background: #61dafb;
+}
+
+.book:nth-child(3) {
+  animation-delay: 0.4s;
+  background: #1e3148;
+}
+
+.alertMessage {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e6f4ea;
+  border: 1px solid #c8e6c9;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  animation: .8s fadeDown ease-in-out;
+}
+
+.alertMessage.success-fill {
+  color: #2e7d32;
+}
+
+.alertMessage.error-fill {
+  color: #e57373;
+  background-color: #ffd9d9a4;
+}
+
+.alertMessage.warning-fill {
+  color: #f57c00;
+  background-color: #fff3e0;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0) 
+  }
+}
+
+@keyframes bookDrop {
+  0% {
+    transform: translateX(-20px) scaleX(1);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0) scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes stack {
+
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
 }

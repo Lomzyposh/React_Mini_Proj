@@ -12,7 +12,7 @@ function Login() {
         <h2>Login</h2>
         <input
           type="text"
-          placeholder="Username or Email"
+          placeholder="Email"
           required
         />
         <input

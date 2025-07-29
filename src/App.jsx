@@ -5,12 +5,14 @@ import './App.css'
 import { BrowserRouter } from 'react-router-dom'
 import RouterConfig from './RouterConfig'
 import Navbar from './components/Navbar'
+import Loader from './components/Loader'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
+    <Loader />
       <Navbar />
       <RouterConfig />
     </BrowserRouter>
