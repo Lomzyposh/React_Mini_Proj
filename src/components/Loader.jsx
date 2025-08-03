@@ -6,9 +6,9 @@ const Loader = ({ loaderShow = false }) => {
             {loaderShow ?
                 < div className="customLoad" >
                     <div className="book-loader">
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
+                        <div className="book"></div>
+                        <div className="book"></div>
+                        <div className="book"></div>
                     </div>
                 </div > : ''
             }

@@ -3,26 +3,122 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #1e3148;
+  height: 100px;
+  box-shadow: 0px 0px 10px #7C6D6B;
+  position: sticky;
+  top: 0;
+  /* border-bottom: 1px solid #7C6D6B; */
+  background-color: #252525;
+  z-index: 2000;
 }
 
 nav .logo {
   display: flex;
-  gap: 10px;
+  /* flex-direction: column; */
+  gap: 4px;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   overflow: hidden;
 }
 
 nav .logo h1 {
-  color: #61dafb;
+  color: #F96501;
+  letter-spacing: 3px;
+  width: 0;
+  white-space: nowrap;
+  border-right: 2px solid #7C6D6B;
+  /* font-family: "Bitcount Prop Single", system-ui;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0; */
+  font-family: Unbounded, Arial;
+  font-size: 17px;
+  animation: typing 2s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+.no-type {
+  white-space: nowrap;
+  font-size: 2rem;
+  border-right: none;
+  width: 100%;
+  font-family: monospace;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-buttons button {
+  all: unset;
+  padding: 10px;
   font-size: 20px;
-  font-family: 'DynaPuff', sans-serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Fira Code';
+  position: relative;
+  transition: .4s ease-in-out;
+}
+
+.nav-buttons button:hover {
+  box-shadow: 0px 3px 5px #2b5e6c;
+  /* transform: translateY(-2px); */
+}
+
+#libraryCount {
+  width: 16px;
+  height: 16px;
+  background-color: #2b5e6c;
+  padding: 3px;
+  border-radius: 50%;
+  font-size: 11px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -4px;
+  right: -5px;
+}
+
+
+.logoutBtn {
+  color: #d81313 !important;
+}
+
+
+@keyframes typing {
+  from {
+    overflow: hidden;
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
 }
 
 nav .logo img {
   width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav .logo img:hover {
+  transform: scale(1.1);
 }
 
 .customLoad {
@@ -32,7 +128,8 @@ nav .logo img {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
+  z-index: 4000;
 }
 
 .book-loader {
@@ -45,7 +142,7 @@ nav .logo img {
 .book {
   width: 50px;
   height: 20px;
-  background-color: #1e3148;
+  background-color: #F96501;
   border-radius: 12px;
   transform-origin: bottom;
   animation: bookDrop 0.8s ease-in-out infinite alternate;
@@ -53,12 +150,27 @@ nav .logo img {
 
 .book:nth-child(2) {
   animation-delay: 0.2s;
-  background: #61dafb;
+  background: #7C6D6B;
 }
 
 .book:nth-child(3) {
   animation-delay: 0.4s;
-  background: #1e3148;
+  background: #F96501;
+}
+
+.loadingScreen {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  height: 300px;
+}
+
+.loadingScreen{
+  color: #f57c00;
+  font-size: 30px;
 }
 
 .alertMessage {
@@ -83,7 +195,6 @@ nav .logo img {
 
 .alertMessage.error-fill {
   color: #e57373;
-  background-color: #ffd9d9a4;
 }
 
 .alertMessage.warning-fill {
@@ -99,7 +210,7 @@ nav .logo img {
 
   to {
     opacity: 1;
-    transform: translate(-50%, 0) 
+    transform: translate(-50%, 0)
   }
 }
 
@@ -126,3 +237,64 @@ nav .logo img {
     transform: translateY(-10px);
   }
 }
+
+.footer {
+  background-color: #252525;
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Quicksand', Arial;
+}
+
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #F96501;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.app-buttons a img {
+  width: 130px;
+  margin: 10px 0;
+  display: block;
+}
+
+.app-buttons p {
+  font-size: 12px;
+  color: #e6f4ea;
+  margin-top: 10px;
+}
+
+

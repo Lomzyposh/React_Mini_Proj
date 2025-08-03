@@ -1,19 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./SignUpPage.css";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loader from "../components/Loader";
 import AlertMessage from "../components/AlertMessage";
 
-function SignUpPage() {
+function SignUpPage({ setIsLoggedIn }) {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loaderShow, setLoaderShow] = useState(false);
-  const [alertMsg, setAlertMsg] = useState("");
   const [alert, setAlert] = useState({ type: "", message: "" });
   const navigate = useNavigate();
 
@@ -61,12 +59,15 @@ function SignUpPage() {
     setTimeout(() => {
       setLoaderShow(false);
       existingUsers.push(newUser);
+      localStorage.setItem('isLoggedIn', 'true');
+      setIsLoggedIn(true);
       localStorage.setItem("users", JSON.stringify(existingUsers));
       showAlert("success", "User created successfully!");
 
       setEmail('')
       setPassword('');
       setConfirmPassword('');
+      navigate('/dashboard');
     }, 1000)
 
   }
@@ -102,7 +103,7 @@ function SignUpPage() {
           />
           <button type="submit" onClick={createUser}>Sign Up</button>
           <p>
-            Already have an account? <a href="/">Login</a>
+            Already have an account? <Link to='/login'>Login</Link>
           </p>
         </form>
       </div>

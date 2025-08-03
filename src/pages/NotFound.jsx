@@ -3,15 +3,10 @@ import { Link } from 'react-router-dom'
 
 const NotFound = () => {
     return (
-        <div>
-            <Link to="/">Login</Link>
-            <br />
-            <Link to="/signup">Sign Up</Link>
-            <br />
-            <Link to="/dashboard">Dashboard</Link>
-            This page does not exist. Please check the URL or return to the home page.
-            <br />
-            <a href="/">Go to Home</a>
+        <div className="notfound-container">
+            <h1 className="notfound-code">404</h1>
+            <p className="notfound-message">Oops! The page you're looking for doesn't exist.</p>
+            <Link to="/" className="notfound-link">Back to Home</Link>
         </div>
     )
 }
