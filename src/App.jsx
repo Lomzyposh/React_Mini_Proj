@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -6,21 +6,12 @@ import { BrowserRouter } from 'react-router-dom'
 import RouterConfig from './RouterConfig'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { AppContext } from './context/AppContext'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const [showSearchbar, setSearchbar] = useState(false);
-  const toggleSidebar = () => setSearchbar(prev => !prev);
-
-
-  useEffect(() => {
-    const loggedInStatus = localStorage.getItem('isLoggedIn');
-    if (loggedInStatus === "true") {
-      setIsLoggedIn(true);
-    }
-  }, []);
+  const {
+    isLoggedIn
+  } = useContext(AppContext);
 
   useEffect(() => {
     localStorage.setItem('isLoggedIn', isLoggedIn);
@@ -28,8 +19,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} onToggleSearch={toggleSidebar} />
-      <RouterConfig setIsLoggedIn={setIsLoggedIn} showSearchbar={showSearchbar} setSearchbar={setSearchbar} />
+      <Navbar />
+      <RouterConfig />
       <Footer />
     </BrowserRouter>
 

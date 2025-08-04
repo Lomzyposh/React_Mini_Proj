@@ -1,35 +1,30 @@
 import clsx from 'clsx'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import SearchBar from '../components/SearchBar'
-
-// const TopNavbar = () => {
-//     <nav className="logoB" >
-//         <div className="leftSide">
-//             <div className="hamburger">
-
-//             </div>
-//             <div className="logo">
-//                 <div className="logoImg">
-//                     <img src="/transBook3.png" alt="books" />
-//                 </div>
-//                 <h1 className=>Read-Feed</h1>
-//             </div>
-//         </div>
-//     </nav>
-
-// }
+import NotLoggedInRedirect from '../components/NotLoggedInRedirect'
+import { AppContext } from '../context/AppContext'
 
 
 
-const Dashboard = ({ setIsLoggedIn, showSearchbar, setSearchbar }) => {
+const Dashboard = () => {
+
+    const {
+        isLoggedIn,
+        showSearchbar,
+        setSearchbar,
+        toggleSearchbar
+    } = useContext(AppContext);
+
     const [dateDiff, setDateDiff] = useState(0);
 
     useEffect(() => {
-        fetch('')
         setDateDiff(new Date().getFullYear() - 2002);
     }, [])
+
+    if (isLoggedIn === null) return null;
+    if (!isLoggedIn) return <NotLoggedInRedirect />;
 
     return (
         <div className="dashboard">
@@ -45,9 +40,9 @@ const Dashboard = ({ setIsLoggedIn, showSearchbar, setSearchbar }) => {
 
                 </div>
 
-                <div className="selectCategory" id="selectCategory">
+                <div className="selectDashCategory" id="selectDashCategory">
                     <h2>What do you want to read</h2>
-                    <div className="rowSelect">
+                    <div className="rowDashSelect">
                         <button>
                             <Link to='/category/fiction'>Fiction <i className="bi bi-arrow-right"></i></Link>
                         </button>
@@ -76,11 +71,31 @@ const Dashboard = ({ setIsLoggedIn, showSearchbar, setSearchbar }) => {
                             <Link to='/category/children'>Children <i className="bi bi-arrow-right"></i></Link>
                         </button>
                         <button>
-                            <Link to='/category/self-help'>Self-Help <i className="bi bi-arrow-right"></i></Link>
+                            <Link to='/category/self'>Self-Help <i className="bi bi-arrow-right"></i></Link>
                         </button>
                     </div>
 
+
+
                 </div>
+
+                <div className="filterByYear" id="filterByYear">
+                    <h3>Looking for books from a specific year?</h3>
+                    <p>Select a year to filter available titles:</p>
+                    <div className="yearFilterOptions">
+                        <button>
+                            <Link>2025</Link>
+                        </button>
+                        <button>2024</button>
+                        <button>2023</button>
+                        <button>2022</button>
+                        <button>2021</button>
+                        <button>2020</button>
+                        <button>2019</button>
+                        <button>Older</button>
+                    </div>
+                </div>
+
             </main>
         </div>
     )

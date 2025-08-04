@@ -1,0 +1,222 @@
+[
+    {
+        "bookId": "book001",
+        "title": "Einstein: His Life and Universe",
+        "category": "Biography",
+        "year": 2007,
+        "image": "https://th.bing.com/th/id/OIP.EBNx_9FNAj0UHcfloedY5AAAAA?w=186&h=280&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "Walter Isaacson"
+        ],
+        "description": "The definitive, internationally bestselling biography of Albert Einstein. Now the basis of Genius, the ten-part National Geographic series on the life of Albert Einstein, starring the Oscar, Emmy, and Tony Award–winning actor Geoffrey Rush as Einstein. How did his mind work? What made him a genius? Isaacson’s biography shows how Einstein’s scientific imagination sprang from the rebellious nature of his personality. His fascinating story is a testament to the connection between creativity and freedom. Einstein explores how an imaginative, impertinent patent clerk—a struggling father in a difficult marriage who couldn’t get a teaching job or a doctorate—became the mind reader of the creator of the cosmos, the locksmith of the mysteries of the atom, and the universe. His success came from questioning conventional wisdom and marveling at mysteries that struck others as mundane. This led him to embrace a morality and politics based on respect for free minds, free spirits, and free individuals. Einstein, the classic #1 New York Times bestseller, is a brilliantly acclaimed account of the most influential scientist of the twentieth century, “an illuminating delight” (The New York Times). The basis for the National Geographic series Genius, by the author of The Innovators, Steve Jobs, and Benjamin Franklin, this is the definitive biography of Albert Einstein."
+    },
+    {
+        "bookId": "book002",
+        "title": "To Kill a Mockingbird",
+        "category": "Fiction",
+        "year": 1960,
+        "image": "https://books.google.com/books/content?id=PGR2AwAAQBAJ&printsec=frontcover&img=1&zoom=1",
+        "authors": [
+            "Harper Lee"
+        ],
+        "description": "Published in 1960, Harper Lee’s 'To Kill a Mockingbird' quickly became a classic of modern American literature. This deeply moving novel follows young Scout Finch and her brother Jem as they navigate life in the racially charged town of Maycomb, Alabama during the Great Depression. Through the wise and steady eyes of their father Atticus Finch—a principled lawyer who defends a Black man unjustly accused of raping a white woman—the children confront issues of race, justice, morality, and compassion. The novel is celebrated not only for its strong moral conscience and unflinching honesty but also for its warmth and humor. Its profound themes remain deeply relevant today. With characters that leap off the page and a narrative voice that captivates across generations, 'To Kill a Mockingbird' continues to inspire readers to confront prejudice and embrace empathy and understanding in the face of injustice."
+    },
+    {
+        "bookId": "book003",
+        "title": "Sapiens: A Brief History of Humankind",
+        "category": "History",
+        "year": 2014,
+        "image": "https://books.google.com/books/content?id=ozVwDwAAQBAJ&printsec=frontcover&img=1&zoom=1",
+        "authors": [
+            "Yuval Noah Harari"
+        ],
+        "description": "In 'Sapiens: A Brief History of Humankind', Yuval Noah Harari traces the evolution of our species from insignificant apes to rulers of the world. This groundbreaking book explores how Homo sapiens came to dominate the planet by examining the Cognitive, Agricultural, and Scientific Revolutions. Harari delves into how myths, religions, and ideologies shaped civilizations, and how capitalism, imperialism, and modern science transformed societies. With sharp insight and engaging storytelling, he challenges readers to consider the constructs that govern our lives—from money and nation-states to human rights and happiness. 'Sapiens' is not just a chronicle of history, but a bold analysis of who we are, how we got here, and where we might be headed. A global phenomenon translated into dozens of languages, this book changes the way we think about our species, and provokes deep questions about our past and future."
+    },
+    {
+        "bookId": "book004",
+        "title": "Becoming",
+        "category": "Memoir",
+        "year": 2018,
+        "image": "https://books.google.com/books/content?id=4oKSDwAAQBAJ&printsec=frontcover&img=1&zoom=1",
+        "authors": [
+            "Michelle Obama"
+        ],
+        "description": "'Becoming' is the deeply personal memoir of Michelle Obama, the former First Lady of the United States. In this compelling book, she invites readers into her world, chronicling the experiences that have shaped her—from her childhood on the South Side of Chicago to her years as an executive, wife, and mother, and finally to her time spent at the world’s most famous address. With unflinching honesty and grace, Obama describes her triumphs and disappointments, both public and private, while offering inspiring reflections on finding a voice and living with purpose. Her journey is a powerful testament to resilience, determination, and the courage to challenge expectations. Warm, wise, and revelatory, 'Becoming' is a story of hope and empowerment, and a call to embrace the potential within us all."
+    },
+    {
+        "bookId": "book005",
+        "title": "1984",
+        "category": "Dystopian",
+        "year": 1949,
+        "image": "https://books.google.com/books/content?id=kotPYEqx7kMC&printsec=frontcover&img=1&zoom=1",
+        "authors": [
+            "George Orwell"
+        ],
+        "description": "George Orwell’s dystopian masterpiece '1984' is a chilling portrayal of totalitarianism and the erosion of personal freedom. Set in a grim future where the Party, led by the omnipresent Big Brother, controls every aspect of life, the novel follows Winston Smith, a low-ranking member of the ruling regime. As Winston dares to question the status quo, he embarks on a dangerous journey of rebellion, thoughtcrime, and love. Orwell’s haunting vision of surveillance, censorship, and propaganda has become disturbingly prophetic. The novel examines the dangers of authoritarianism, the manipulation of truth, and the power of language and memory. As relevant now as when it was first published, '1984' remains a searing warning about the fragility of liberty and the resilience of the human spirit. A must-read for anyone who values truth, freedom, and justice in an age of disinformation and control."
+    },
+    {
+        "bookId": "book006",
+        "title": "The Catcher in the Rye",
+        "category": "Coming-of-Age",
+        "year": 1951,
+        "image": "https://th.bing.com/th/id/OIP.fr9AdlPLjgJyt4vklEkFPQHaKl?w=135&h=193&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "J.D. Salinger"
+        ],
+        "description": "'The Catcher in the Rye' by J.D. Salinger is a timeless coming-of-age novel that captures the alienation and angst of adolescence. Narrated by the cynical yet deeply sensitive Holden Caulfield, the book follows his journey through New York City after being expelled from prep school. Disenchanted with the 'phoniness' of the adult world, Holden grapples with identity, grief, and the loss of innocence. His honest, often humorous voice has resonated with generations of readers. A portrait of teenage disillusionment and emotional struggle, the novel explores themes of isolation, mental health, and the yearning for authenticity. Salinger’s iconic work remains a profound exploration of growing up and the pain of navigating a world that doesn’t always make sense."
+    },
+    {
+        "bookId": "book007",
+        "title": "Educated",
+        "category": "Memoir",
+        "year": 2018,
+        "image": "https://th.bing.com/th/id/OIP.1yxzubZmAATvU45lvdMx9wHaJ3?w=132&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "Tara Westover"
+        ],
+        "description": "'Educated' is the riveting memoir of Tara Westover, who was born into a survivalist family in rural Idaho and grew up without formal education. Isolated from mainstream society, she endured a childhood marked by violence, religious extremism, and denial of basic schooling. At seventeen, she defied her upbringing and set foot in a classroom for the first time. Her quest for knowledge led her to Brigham Young University, Harvard, and ultimately a PhD from Cambridge. Westover's journey from ignorance to academic achievement is both harrowing and inspiring. With searing honesty, she recounts the struggles of separating from family and finding her own voice. 'Educated' is a powerful testament to the resilience of the human spirit and the transformative power of education. It is a memoir of survival, self-invention, and the difficult pursuit of truth."
+    },
+    {
+        "bookId": "book008",
+        "title": "The Great Gatsby",
+        "category": "Classic",
+        "year": 1925,
+        "image": "https://th.bing.com/th/id/OIP.pG1ovjXl1PNXjKZQzrc74AHaKz?w=120&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "F. Scott Fitzgerald"
+        ],
+        "description": "F. Scott Fitzgerald’s 'The Great Gatsby' is a literary classic that captures the glamour and disillusionment of the Jazz Age. Set in the opulent world of Long Island’s elite, the novel follows the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan. Narrated by the introspective Nick Carraway, the story delves into themes of love, wealth, ambition, and the decay of the American Dream. Fitzgerald’s lyrical prose and sharp social commentary paint a vivid picture of a world where surface appearances mask inner emptiness. Gatsby’s tragic pursuit of an unattainable ideal serves as a haunting reflection on hope, illusion, and the passing of time. A cornerstone of American literature, 'The Great Gatsby' continues to captivate readers with its elegance and profound emotional resonance."
+    },
+    {
+        "bookId": "book009",
+        "title": "Atomic Habits",
+        "category": "Self-Help",
+        "year": 2018,
+        "image": "https://th.bing.com/th/id/OIP.bX8mHQa4gajwX7oWCok-tQHaIk?w=160&h=185&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "James Clear"
+        ],
+        "description": "'Atomic Habits' by James Clear is a practical and transformative guide to building good habits, breaking bad ones, and mastering the tiny behaviors that lead to remarkable results. Clear reveals how small changes, when consistently applied, compound into significant personal and professional growth. Drawing on the science of behavior change, he introduces actionable strategies like habit stacking, identity reinforcement, and environmental design. With relatable examples and clear frameworks, the book empowers readers to redesign their systems and make success inevitable. Whether you’re trying to quit a bad habit, start a new routine, or optimize your productivity, 'Atomic Habits' offers a powerful roadmap to lasting change. It’s not about achieving perfection—it’s about making progress, one habit at a time."
+    },
+    {
+        "bookId": "book010",
+        "title": "A Brief History of Time",
+        "category": "Science",
+        "year": 1988,
+        "image": "https://th.bing.com/th/id/OIP.ZaBSfVwWlpmiddmdTGdjGgHaL0?w=186&h=297&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "Stephen Hawking"
+        ],
+        "description": "Stephen Hawking’s groundbreaking book 'A Brief History of Time' brings complex concepts of cosmology and theoretical physics to the general reader in clear, accessible prose. From the Big Bang and black holes to time travel and the nature of the universe, Hawking explores the profound mysteries of existence with wit, clarity, and humility. He delves into the origins of the cosmos, the nature of time, and the search for a unified theory that explains everything. Hawking’s ability to translate the language of science into everyday terms has inspired millions to look up at the stars with curiosity and wonder. A global bestseller, the book remains a testament to the power of human intellect and imagination in the quest to understand the universe."
+    },
+    {
+        "bookId": "book011",
+        "title": "Thinking, Fast and Slow",
+        "category": "Psychology",
+        "year": 2011,
+        "image": "https://books.google.com/books/content?id=ZuKTvERuPG8C&printsec=frontcover&img=1&zoom=1",
+        "authors": [
+            "Daniel Kahneman"
+        ],
+        "description": "'Thinking, Fast and Slow' is a landmark book by Nobel laureate Daniel Kahneman that explores the two systems that drive the way we think. System 1 is fast, intuitive, and emotional; System 2 is slower, more deliberative, and more logical. Kahneman reveals how these systems shape our judgments and decisions, often in ways we’re unaware of. Drawing on decades of groundbreaking research in psychology and behavioral economics, the book uncovers the biases and heuristics that influence our thinking, from overconfidence and loss aversion to framing effects and anchoring. Rich with insights, case studies, and thought-provoking experiments, it challenges readers to question how they perceive reality and make choices. 'Thinking, Fast and Slow' is an essential guide to better understanding ourselves and making smarter decisions in life, business, and beyond."
+    },
+    {
+        "bookId": "book012",
+        "title": "The Power of Now",
+        "category": "Spirituality",
+        "year": 1997,
+        "image": "https://th.bing.com/th/id/OIP.W-NuUBsVFTt690Nte14vjgHaHa?w=148&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "Eckhart Tolle"
+        ],
+        "description": "'The Power of Now' by Eckhart Tolle is a spiritual guide that has touched the lives of millions around the world. In this transformative book, Tolle explores how living fully in the present moment is the key to personal peace and enlightenment. He explains how the mind’s attachment to the past and anxiety about the future create suffering, and how surrendering to the Now brings liberation from ego, fear, and pain. Through practical teachings and deep insights, Tolle helps readers shift consciousness from thinking to being, and from doing to awareness. A modern spiritual classic, 'The Power of Now' is a beacon for those seeking inner transformation, mindfulness, and a deeper connection to life itself."
+    },
+    {
+        "bookId": "book013",
+        "title": "Pride and Prejudice",
+        "category": "Classic",
+        "year": 1813,
+        "image": "https://covers.openlibrary.org/b/id/10558357-L.jpg",
+        "authors": [
+            "Jane Austen"
+        ],
+        "description": "Pride and Prejudice is a timeless romantic novel that explores the intricacies of manners, morality, and marriage in early 19th-century England. Through the witty and independent Elizabeth Bennet and the brooding Mr. Darcy, Jane Austen crafts a story rich with social commentary and emotional depth. The novel delves into themes of class, family expectations, and the dangers of first impressions. With sharp dialogue and enduring characters, Pride and Prejudice remains a brilliant critique of societal norms wrapped in a delightful love story."
+    },
+    {
+        "bookId": "book014",
+        "title": "The Power of Now",
+        "category": "Spirituality",
+        "year": 1997,
+        "image": "https://th.bing.com/th/id/OIP.W-NuUBsVFTt690Nte14vjgHaHa?w=148&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "Eckhart Tolle"
+        ],
+        "description": "The Power of Now is a spiritual guide that emphasizes living in the present moment as the path to true peace and fulfillment. Eckhart Tolle combines insights from various spiritual traditions with practical advice to help readers let go of past regrets and future anxieties. The book explores the ego’s role in human suffering and provides tools for transcending it. With clarity and compassion, Tolle encourages us to awaken to our true nature and live more consciously in the now."
+    },
+    {
+        "bookId": "book015",
+        "title": "The Hobbit",
+        "category": "Fantasy",
+        "year": 1937,
+        "image": "https://covers.openlibrary.org/b/id/6979861-L.jpg",
+        "authors": [
+            "J.R.R. Tolkien"
+        ],
+        "description": "The Hobbit is a fantasy adventure that follows Bilbo Baggins, a humble hobbit whose quiet life is upended when he joins a band of dwarves on a quest to reclaim their stolen treasure. Along the way, Bilbo faces trolls, goblins, and a dragon named Smaug. Tolkien’s richly imagined world, filled with mythology, magic, and timeless themes, laid the groundwork for modern fantasy literature. With humor, heart, and heroism, The Hobbit celebrates courage, friendship, and the joy of unexpected journeys."
+    },
+    {
+        "bookId": "book016",
+        "title": "The Four Agreements",
+        "category": "Self-help",
+        "year": 1997,
+        "image": "https://covers.openlibrary.org/b/id/10952469-L.jpg",
+        "authors": [
+            "Don Miguel Ruiz"
+        ],
+        "description": "The Four Agreements offers a code of conduct based on ancient Toltec wisdom to help readers achieve personal freedom and inner peace. Don Miguel Ruiz outlines four simple yet powerful principles—Be impeccable with your word, Don’t take anything personally, Don’t make assumptions, and Always do your best. These teachings challenge deeply held beliefs and foster a life of awareness and transformation. A spiritual classic, this book continues to inspire millions with its clarity and profound guidance."
+    },
+    {
+        "bookId": "book017",
+        "title": "The Catcher in the Rye",
+        "category": "Classic",
+        "year": 1951,
+        "image": "https://th.bing.com/th/id/OIP.fr9AdlPLjgJyt4vklEkFPQHaKl?w=135&h=193&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "J.D. Salinger"
+        ],
+        "description": "The Catcher in the Rye captures the voice of teenage rebellion through Holden Caulfield, a disenchanted youth navigating the phoniness of adult society. Set in post-war New York, Holden’s narrative is a raw, honest portrayal of alienation, grief, and the struggle to preserve innocence. J.D. Salinger’s novel remains a landmark of American literature for its exploration of identity, mental health, and the pains of growing up. It’s a poignant, often funny, and deeply moving coming-of-age story."
+    },
+    {
+        "bookId": "book018",
+        "title": "The Intelligent Investor",
+        "category": "Finance",
+        "year": 1949,
+        "image": "https://covers.openlibrary.org/b/id/11737333-L.jpg",
+        "authors": [
+            "Benjamin Graham"
+        ],
+        "description": "The Intelligent Investor is Benjamin Graham’s timeless guide to value investing, widely considered the bible of investment strategy. Graham teaches the principles of long-term investing, emphasizing the importance of discipline, research, and risk management. The book introduces concepts such as ‘Mr. Market’ and the ‘margin of safety,’ which have become staples in financial education. With commentary from Warren Buffett, this classic continues to influence generations of investors aiming for stable, sustained growth."
+    },
+    {
+        "bookId": "book019",
+        "title": "A Brief History of Time",
+        "category": "Science",
+        "year": 1988,
+        "image": "https://covers.openlibrary.org/b/id/8099252-L.jpg",
+        "authors": [
+            "Stephen Hawking"
+        ],
+        "description": "A Brief History of Time offers an accessible exploration of the universe’s deepest mysteries, from the Big Bang to black holes. Stephen Hawking guides readers through complex concepts such as time, space, and quantum mechanics with clarity and wit. The book asks profound questions about the nature of reality and our place within it. An international bestseller, it has helped demystify science for the general public and remains a landmark work in cosmology and theoretical physics."
+    },
+    {
+        "bookId": "book020",
+        "title": "The Art of War",
+        "category": "Strategy",
+        "year": 2021,
+        "image": "https://th.bing.com/th/id/OIP.TibaEfhGH0eR8qR_KcAUjAHaMK?w=186&h=305&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+        "authors": [
+            "Sun Tzu"
+        ],
+        "description": "The Art of War is an ancient Chinese military treatise attributed to Sun Tzu, offering strategic wisdom that extends far beyond the battlefield. With concise and powerful maxims, it explores topics such as leadership, deception, timing, and flexibility. Though rooted in warfare, its teachings are widely applied in business, politics, and daily life. A foundational text on strategy and human behavior, The Art of War continues to influence thinkers and leaders around the world."
+    }
+]

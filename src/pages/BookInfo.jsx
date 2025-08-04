@@ -1,15 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import Loader from '../components/Loader';
 import AlertMessage from '../components/AlertMessage';
+import SearchBar from '../components/SearchBar';
+import { AppContext } from '../context/AppContext';
 
-const BookInfo = ({ showSearchbar, setSearchbar }) => {
+const BookInfo = () => {
     const { genre, bookId } = useParams();
-    const [bookInfo, setBookInfo] = useState({});
-    const [categoryInfo, setCategoryInfo] = useState([]);
+    // const [bookInfo, setBookInfo] = useState({});
+    const [categoryInfo, setCategoryInfo] = useState({});
     const [alert, setAlert] = useState({ type: '', message: '' });
     const [loaderShow, setLoaderShow] = useState(false);
     const navigate = useNavigate();
+
+    const {
+        showSearchbar,
+        setSearchbar
+    } = useContext(AppContext);
 
     const showAlert = (type, msg) => {
         setAlert({ type, message: msg });
@@ -25,26 +32,16 @@ const BookInfo = ({ showSearchbar, setSearchbar }) => {
         const fetchBooks = async () => {
             try {
                 setLoaderShow(true);
-                const response = await fetch(`https://www.googleapis.com/books/v1/volumes/${bookId}`);
+                const response = await fetch(`/data/books.json`);
                 const data = await response.json();
+                // setBookInfo(data || []);
 
-                setBookInfo(data || []);
+                const thisData = data.find(book => book.bookId === bookId);
 
-                const volumeInfo = data.volumeInfo;
-
-                setCategoryInfo(
-                    {
-                        id: data.id,
-                        authors: volumeInfo.authors || [],
-                        title: volumeInfo.title || "Untitled",
-                        categories: volumeInfo.categories || ["UnCategorized"],
-                        description: volumeInfo.description || "No description",
-                        image: volumeInfo.imageLinks?.thumbnail || '/noImage.jpg'
-                    }
-                )
+                setCategoryInfo(thisData);
 
             } catch (err) {
-                showAlert("error", "Error Showing Category");
+                showAlert("error", "Network Error. Try Again");
                 console.log("Error Showing Category:" + err);
             } finally {
                 setLoaderShow(false);
@@ -85,7 +82,7 @@ const BookInfo = ({ showSearchbar, setSearchbar }) => {
                 <div className="text">
 
                     <h2 className='bookInfoTitle'>{title}</h2>
-                    <p className='bookAuthor'><span className='by'>By</span> -{authors}</p>
+                    <p className='bookAuthor'><span className='by'>By</span> -{authors.map(author => author).join(", ")}</p>
                     <hr />
                     <div className='bookDescription'>
                         {displayText}
@@ -94,13 +91,13 @@ const BookInfo = ({ showSearchbar, setSearchbar }) => {
                     {shouldTruncate && (
                         <span className="seeMoreToggle" onClick={toggleText}>
                             {showFullText ? 'See less' : 'Read More'}
-                            {showFullText ? (<i class="bi bi-arrow-up"></i>) : (<i class="bi bi-arrow-down"></i>)}
+                            {showFullText ? (<i className="bi bi-arrow-up"></i>) : (<i className="bi bi-arrow-down"></i>)}
                         </span>
                     )}
                     <hr />
                 </div>
                 <div className="buyInfo">
-                    <p>But the book from: </p>
+                    <p>Buy the book from: </p>
                     <div className="buyInfoOptions">
                         <button title='Amazon'>
                             <Link to='https://www.amazon.com/amz-books/store'>Amazon</Link>
@@ -120,17 +117,17 @@ const BookInfo = ({ showSearchbar, setSearchbar }) => {
         )
     }
 
-    
+
 
     return (
         <>
             <AlertMessage type={alert.type} msg={alert.message} />
-
+            {showSearchbar && <SearchBar setSearchbar={setSearchbar} />}
             {loaderShow ?
                 (<Loader loaderShow={loaderShow} />)
-                : categoryInfo?.id ? (
+                : categoryInfo?.bookId ? (
                     <div className="infoContainer">
-                        <Link to={`/category/${genre}`}>
+                        <Link to={`/category/`}>
                             <i className="bi bi-arrow-left-circle-fill backBtn"></i>
                         </Link>
                         {<DisplayBookDiv book={categoryInfo} />}

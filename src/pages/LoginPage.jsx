@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import AlertMessage from '../components/AlertMessage';
 import Loader from '../components/Loader';
+import { AppContext } from '../context/AppContext';
 
-function Login({ setIsLoggedIn }) {
+function Login() {
   const [alert, setAlert] = useState({ type: "", message: "" });
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const [loaderShow, setLoaderShow] = useState(false);
+
+  const {
+    setIsLoggedIn,
+  } = useContext(AppContext);
+
 
   const showAlert = (type, msg) => {
     setAlert({ type, message: msg });

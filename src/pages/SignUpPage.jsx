@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loader from "../components/Loader";
 import AlertMessage from "../components/AlertMessage";
+import { AppContext } from "../context/AppContext";
 
-function SignUpPage({ setIsLoggedIn }) {
+function SignUpPage() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,6 +15,10 @@ function SignUpPage({ setIsLoggedIn }) {
   const [loaderShow, setLoaderShow] = useState(false);
   const [alert, setAlert] = useState({ type: "", message: "" });
   const navigate = useNavigate();
+
+  const {
+    setIsLoggedIn,
+  } = useContext(AppContext);
 
   const showAlert = (type, msg) => {
     setAlert({ type, message: msg });
@@ -54,6 +59,7 @@ function SignUpPage({ setIsLoggedIn }) {
     const newUser = {
       'email': email,
       'password': password,
+      'role': "user",
     }
 
     setTimeout(() => {

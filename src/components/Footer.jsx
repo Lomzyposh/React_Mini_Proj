@@ -25,14 +25,14 @@ const Footer = () => {
                 <div className="footer-column">
                     <h4>CONNECT</h4>
                     <div className="social-icons">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i className="bi bi-facebook"></i></a>
+                        <a href="#"><i className="bi bi-twitter-x"></i></a>
+                        <a href="#"><i className="bi bi-instagram"></i></a>
+                        <a href="#"><i className="bi bi-linkedin"></i></a>
                     </div>
                 </div>
                 <div className="footer-column app-buttons">
-                    <a href="#"><i class="bi bi-google-play"></i> Download on App Store</a>
+                    <a href="#"><i className="bi bi-google-play"></i> Download on App Store</a>
                     <p>© 2025 YourCompany, Inc.</p>
                 </div>
             </div>

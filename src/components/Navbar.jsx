@@ -1,8 +1,17 @@
 import clsx from 'clsx';
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
 
-const Navbar = ({ isLoggedIn, setIsLoggedIn, onToggleSearch }) => {
+const Navbar = () => {
+
+    const {
+        isLoggedIn,
+        setIsLoggedIn,
+        toggleSearchbar
+    } = useContext(AppContext);
+
+
     const location = useLocation();
     const hideOnPaths = ['/signup', '/login'];
     const navigate = useNavigate();
@@ -13,7 +22,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, onToggleSearch }) => {
     const handleLogout = () => {
         setIsLoggedIn(false);
         localStorage.removeItem('isLoggedIn');
-        navigate('/')
+        navigate('/login')
     };
 
     return (
@@ -30,15 +39,15 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn, onToggleSearch }) => {
             {
                 shouldShowIcons && (
                     <div className='nav-buttons'>
-                        <button className="search" id="searchBtn" title='Search' onClick={onToggleSearch}>
-                            <i class="bi bi-search"></i>
+                        <button className="search" id="searchBtn" title='Search' onClick={toggleSearchbar}>
+                            <i className="bi bi-search"></i>
                         </button>
-                        <button className='libraryBtn' title='Library'>
-                            <i class="bi bi-heart-fill"></i>
+                        {/* <button className='libraryBtn' title='Library'>
+                            <i className="bi bi-heart-fill"></i>
                             <span className="count" id='libraryCount'>3</span>
-                        </button>
+                        </button> */}
                         {isLoggedIn ?
-                            (<button className='logoutBtn' title='LogOut' onClick={handleLogout}><i class="bi bi-box-arrow-in-right"></i></button>) :
+                            (<button className='logoutBtn' title='LogOut' onClick={handleLogout}><i className="bi bi-box-arrow-in-right"></i></button>) :
                             (<button className='loginBtn' title='LogIn' onClick={() => navigate('/login')}>Login</button>)
                         }
                     </div>

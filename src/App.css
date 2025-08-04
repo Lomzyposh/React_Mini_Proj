@@ -168,7 +168,7 @@ nav .logo img:hover {
   height: 300px;
 }
 
-.loadingScreen{
+.loadingScreen {
   color: #f57c00;
   font-size: 30px;
 }
@@ -297,4 +297,64 @@ nav .logo img:hover {
   margin-top: 10px;
 }
 
+.fullscreen-container {
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+}
 
+.message-box {
+  background-color: #f96401b3;
+  padding: 2.5rem 4rem;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.message-box h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.message-box p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.redirect-text {
+  font-style: italic;
+  color: #ccc;
+}
+
+.dots::after {
+  content: '';
+  display: inline-block;
+  width: 0.8em;
+  animation: dots 1.5s infinite steps(3, end);
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+
+  33% {
+    content: '.';
+  }
+
+  66% {
+    content: '..';
+  }
+
+  100% {
+    content: '...';
+  }
+}
